@@ -1,23 +1,27 @@
 import org.junit.jupiter.api.*;
 
-@TestMethodOrder(MethodOrderer.Random.class)
+@TestMethodOrder(MethodOrderer.DisplayName.class)
 public class EscolhendoOrdemTestes {
 
+    @DisplayName("A")
     @Test
-    void validaFluxoD(){
+    void validaFluxoA(){
         Assertions.assertTrue(true);
     }
-    @Test
-    void validaFluxoC(){
-        Assertions.assertTrue(true);
-    }
-
+    @DisplayName("B")
     @Test
     void validaFluxoB(){
         Assertions.assertTrue(true);
     }
+
+    @DisplayName("C")
     @Test
-    void validaFluxoA(){
+    void validaFluxoC(){
+        Assertions.assertTrue(true);
+    }
+    @DisplayName("D")
+    @Test
+    void validaFluxoD(){
         Assertions.assertTrue(false);
     }
 
